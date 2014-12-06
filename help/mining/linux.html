@@ -73,7 +73,7 @@ Date Downloaded: 2014-12-05 09:27:01 PM !-->
  <div class=''><div class='splash dark fill-green'>
    <div class='limiter'>
      <h2><a href='../index.html' class='small quiet'>DOCUMENTATION </a></h2>
-     <h1>How to get started with Mining? </h1>
+     <h1>Linux Mining Guide </h1>
    </div>
  </div>
 
@@ -92,27 +92,184 @@ Date Downloaded: 2014-12-05 09:27:01 PM !-->
    <div id='search-results' class='col12 keyline-all clearfix help contain clip space-bottom4'>
      <div class='prose col12 keyline-right' data-swiftype-index='true'>
        <div class='pad2'>
-         <code>POCMiner: https://mega.co.nz/#!b0pzHajA!ERk068l5NS6kR7zdLdTgltqyPw3Z60lwAWvgXtNQNTk
-sha256: fba1ba039fb94868f452c9724002cb85dc7a635384c2cef395cd1578e7031cac
-Github: https://github.com/BurstProject/pocminer
+         
+             <code>[ Ubuntu Based Linux / Desktop and Server ]
 
-Windows mining guide: https://bitcointalk.org/index.php?topic=731923.msg8298999#msg8298999 (thanks to KSpinner)
-Linux mining guide: https://bitcointalk.org/index.php?topic=731923.msg8299637#msg8299637 (thanks to TetraHect0rCannabinol)
+ First of all, make sure you have java runtime environment installed onto your machine, todo this, press Ctrl+t or right click -> open terminal to open a terminal in gui, or if you're in server, you have ssh'd there
+ so no need to open a terminal... lol
+ 
+ then execute the following : java -version
+ if it spits out something simular : 
+  "java version "1.8.0_11"
+   Java(TM) SE Runtime Environment (build 1.8.0_11-b12)
+   Java HotSpot(TM) 64-Bit Server VM (build 25.11-b03, mixed mode)"
+   
+ then you have java installed, if not then you can get it from here :
 
-dcct's plot tools(faster generator, plot optimizer, c miner): https://bitcointalk.org/index.php?topic=731923.msg8879760#msg8879760
-Janror's cpu plotter(sse4/avx2): https://bitcointalk.org/index.php?topic=731923.msg8878839#msg8878839
-bipben's gpu plotter: https://burstforum.com/index.php?threads/gpu-plot-generator.45/
-sse4 linux cpu plotter: https://bitcointalk.org/index.php?topic=731923.msg9087973#msg9087973
+ http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
 
-Gui mining system: https://bitcointalk.org/index.php?topic=771063.0
+ the file ending with .tar.gz is the one you need, just grab the appropriate cpu size (32 /64) for your machine.
+ once the file is downloaded, find out where it downloaded to and open the folder, 
+ 
+ now to unpack and install java, simply go back to the terminal, make sure it is open in the same folder as your downloaded java.tar.gz file and do the following to extract :
+ 
+  
+Code:
+tar xvzf jre-8*.tar.gz -C /tmp/
 
-Plot range checker: https://bchain.info/BURST/tools/overlap (thanks to dcct)
+ then login as root / super user :
+ 
+  
+Code:
+sudo su
 
-Experimental windows mining gui: http://burst.today</code>
+ then check for jvm dir, if not create it : 
+ 
+  
+Code:
+if [ ! -d '/usr/lib/jvm' ]; then mkdir /usr/lib/jvm; fi
+
+ move the extracted jre to the lib folder :
+ 
+  
+Code:
+mv /tmp/jre1.8* /usr/lib/jvm/
+
+ then update the folder paths :
+ 
+  
+Code:
+ update-alternatives --install /usr/bin/java java /usr/lib/jvm/jre1.8*/bin/java 1065
+  update-alternatives --install /usr/bin/javaws javaws /usr/lib/jvm/jre1.8*/bin/javaws 1065
+  
+ 
+ Then exit root, and finally execute :
+ 
+  
+Code:
+update-alternatives --config java
+
+ now, execute the command "java -version" and it should spit out the jre info (above).
+ 
+ now that that is all done, change the directory of the terminal to the pocminer_v1 folder ([ Devices ] bottom)
+ 
+  
+Code:
+cd /path/to/pocminer_v1/
+
+ edit your passphrase in passphrase.txt via nano :
+ 
+  
+Code:
+nano passphrase.txt
+
+ and fill this with a long, random password (greater than 32 characters, as this is your wallet / account private key), press ctrl + x then y to save it.
+ 
+ then run the following : 
+ 
+  
+Code:
+sh run_dump_address.sh
+
+ it will create a file called address.txt in the pocminer_v1 folder in the following format :
+
+ 
+Code:
+Found address: PRIVATE_KEY -> ACCOUNT_ID
+
+ all you need for now is the account id number, no "->" and no private key, just copy the account id and then type the following into
+ cmd to start the plot generation : (goto [ Info ] at the bottom, for a explanation of the parameters. )
+
+  
+Code:
+sh run_generate.sh ACCOUNT_ID <start_plot> <total_num_plots> <staggnation> <cpu_threads>
+
+ now this will start to generate your plots, in the mean time you can start mining, to do so you need to setup the wallet,
+ where ever you have extracted the wallet to, 
+ 
+  
+Code:
+cd /path/to/burst_1.0.0/
+
+ then proceed to edit the config: 
+ 
+  
+Code:
+nano conf/nxt-default.properties
+
+ find this setting "nxt.myAddress=", change it to your external ip address (get it from http://ipchicken.com), so it should end up like so :
+
+ 
+Code:
+nxt.myAddress=192.168.0.1:8123
+
+ Where 192.168.0.1 is, is your external ip, once changed, save it and then run :
+ 
+  
+Code:
+sh run.sh
+
+ then open a web browser, goto "http://127.0.0.1:8125" and it should show the burst login page, to login, use the passphrase you set in "pocminer_v1/passphrase.txt".
+ 
+ open another terminal, change the path to your miner folder, simply start mining via executing the following in cmd :
+
+  
+Code:
+ cd /path/to/pocminer_v1/
+  sh run_mine.sh
+  
+
+ it should start mining with a output simular to :
+
+ 
+Code:
+{"generationSignature":"0dafa8c3c6d967a5c9bff12f26c46a64bf6bcf30d0f0044b4bb3a078bfc281c0","height":"246"}
+ Error reading file: ACCOUNT_ID_20000_40000_500
+ {"generationSignature":"0dafa8c3c6d967a5c9bff12f26c46a64bf6bcf30d0f0044b4bb3a078bfc281c0","height":"246"}
+ {"generationSignature":"0dafa8c3c6d967a5c9bff12f26c46a64bf6bcf30d0f0044b4bb3a078bfc281c0","height":"246"}
+ New best: ACCOUNT_ID:19251
+ Submitting share
+ {"result":"deadline: 31774"}
+ {"generationSignature":"0dafa8c3c6d967a5c9bff12f26c46a64bf6bcf30d0f0044b4bb3a078bfc281c0","height":"246"}
+ {"generationSignature":"0dafa8c3c6d967a5c9bff12f26c46a64bf6bcf30d0f0044b4bb3a078bfc281c0","height":"246"}
+ ......
+ 
+
+as long as you see "New best: ACCOUNT_ID:19251 / Submitting share", it means you are mining, just let it run, read the bottom [ Info ] for more info on the values.
+
+[ Devices ]
+Now depending on where you wish to have your plots, its rather simple if you want them on your usb drive then make sure your usb is plugged in and
+you have extracted the "pocminer_v1" folder to the device, if you would rather place on your hdd then no problems, just make sure you know where you
+have extracted the folder.
+
+Examples :
+ 
+Code:
+/home/hect0r/Desktop/pocminer_v1 === internal usb hdd.
+ /media/USB_UUID/pocminer_v1 === external usb hdd / stick.
+ 
+
+ Or simply making a partition and mount it, then use that said path.
+
+[ Info ]
+ACCOUNT_ID : is the ending number in the address.txt file, once you have filled out passphrase and ran run_dump_address.
+start_plot_num : is the starting plot, every plot file you make, just start the plot from the previous generate run start_plot + num_plots.
+total_num_plots : is the number of plots you wish to generate, each plot is 256kb.
+staggnation : is the number of plots to group together per run, which causes less disk reads / seeks the higher it is, the lower the more disk reads/ seeks. the maximum is 8191.
+num_cpu_threads : no need to explain this..
+deadline : "...
+The "deadline" is a measurement of seconds until you may generate a block (provided no one else has already generated one). Yes, it is a bit of a race, but as your plot # increases, so do your chances of hitting/solving a block. I believe you can compare the size of your plot to what would be your hashrate if mining a normal scrypt coin.
+..."
+             </code>
 
  
 
+ <a name="Notes"></a>
+ <h2>Notes </h2>
 
+ <ul>
+ <li>Thanks to TetraHect0rCannabinol for this documentation. </li>
+ </ul>
 
 
        </div>

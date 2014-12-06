@@ -73,7 +73,7 @@ Date Downloaded: 2014-12-05 09:27:01 PM !-->
  <div class=''><div class='splash dark fill-green'>
    <div class='limiter'>
      <h2><a href='../index.html' class='small quiet'>DOCUMENTATION </a></h2>
-     <h1>How to get started with Mining? </h1>
+     <h1>Windows Mining Guide </h1>
    </div>
  </div>
 
@@ -92,27 +92,85 @@ Date Downloaded: 2014-12-05 09:27:01 PM !-->
    <div id='search-results' class='col12 keyline-all clearfix help contain clip space-bottom4'>
      <div class='prose col12 keyline-right' data-swiftype-index='true'>
        <div class='pad2'>
-         <code>POCMiner: https://mega.co.nz/#!b0pzHajA!ERk068l5NS6kR7zdLdTgltqyPw3Z60lwAWvgXtNQNTk
-sha256: fba1ba039fb94868f452c9724002cb85dc7a635384c2cef395cd1578e7031cac
-Github: https://github.com/BurstProject/pocminer
+         <code>This is meant as a quick start guide for those having issues with setting their system up on windows. This might be useful for those not familiar with the NXT platform...
 
-Windows mining guide: https://bitcointalk.org/index.php?topic=731923.msg8298999#msg8298999 (thanks to KSpinner)
-Linux mining guide: https://bitcointalk.org/index.php?topic=731923.msg8299637#msg8299637 (thanks to TetraHect0rCannabinol)
+First download this:
+Wallet: https://mega.co.nz/#!ml4RTKBR!8g0-7RNjkIowgIJuhu-GHLXJRkKRxBlGh_tkbI4Sar4
 
-dcct's plot tools(faster generator, plot optimizer, c miner): https://bitcointalk.org/index.php?topic=731923.msg8879760#msg8879760
-Janror's cpu plotter(sse4/avx2): https://bitcointalk.org/index.php?topic=731923.msg8878839#msg8878839
-bipben's gpu plotter: https://burstforum.com/index.php?threads/gpu-plot-generator.45/
-sse4 linux cpu plotter: https://bitcointalk.org/index.php?topic=731923.msg9087973#msg9087973
+Next download this:
+POCMiner: https://mega.co.nz/#!b0pzHajA!ERk068l5NS6kR7zdLdTgltqyPw3Z60lwAWvgXtNQNTk
 
-Gui mining system: https://bitcointalk.org/index.php?topic=771063.0
+And lastly, ensure that you have the latest Java downloaded onto your PC. It seems as though incorrect java versions and correct java installation were the main causes of 50% of the problems listed in the beginning pages.
 
-Plot range checker: https://bchain.info/BURST/tools/overlap (thanks to dcct)
+Step 1: Extract everything to the root of the drive you want to use (ie. the main driver directory). You should wind up with everything from the pocminer_v1 folder showing in the root directory, and with the Burst_1.0.0 folder in the root directory (containing the wallet program).
+***you cannot extract this file to the root along with the miner, as they both contain files with the same names, and they will overwrite one or the other. Just leave the wallet in its own folder***
 
-Experimental windows mining gui: http://burst.today</code>
+Step 2: Type a PASSWORD of your choosing into the passphrase text doc and save it.
+
+Step 3: If using windows, replace the first word "java" in each of the .bat files with "C:\Windows\SysWOW64\java" and "save as" each of them as .bat files again.
+
+Example for the run_generate .bat file:
+Original; java -Xmx4000m -cp pocminer.jar;lib/*;lib/akka/*;lib/jetty/* pocminer.POCMiner generate %*
+
+modified: C:\Windows\SysWOW64\java -Xmx1000m -cp pocminer.jar;lib/*;lib/akka/*;lib/jetty/* pocminer.POCMiner generate %*
+
+Step 3a: Many of the values in the original .bat files were causing issues for my computer, so I changed the -Xmx4000m (or whatever your # was) to a lower value like 1000 or 500 (ie. -Xmx1000m) and it began working. This will be entirely system dependent, and is like tweaking a normal miner's settings to find what works best. 
+
+Step 4: Double click the run_dump_address .bat file
+
+Step 5: check the address .txt file and retrieve your your account #
+
+Example for address is:
+Found address: *whateverpassyouentered* -> *youraccount#*
+
+Step 6: Copy your account number and paste it into the run_generate .bat file along with your plot description and how many threads you wish to use. plottostartwith=0 or 1 / plottoendwith=800000 (for every 200 Gig section)
+
+Example for this is:
+C:\Windows\SysWOW64\java -Xmx1000m -cp pocminer.jar;lib/*;lib/akka/*;lib/jetty/* pocminer.POCMiner generate *youraccount#* *plot#tostartwith* *plot#toendwith* 1000 4
+
+Step 7: Double click the run_generate .bat file and a command window should open, and you should see the computer begin to start creating plots, beginning with whatever you specified in your file.
+*THIS TAKES A LONG TIME* (you can still start mining while creating plots, but don't expect your chances to be high within the first 8-10 hrs. It also took me personally about 8 hrs to plot my first 200 Gig section, so go watch a movie or get a bite to eat when this guide is done)
+
+Step 8: Double click the run .bat and it will open briefly and then close.
+
+Step 9: Open the Burst_1.0.0 folder and Double click the run .bat file there and let it install
+
+Step 10: double click the Burst_Wallet internet shortcut file
+
+Step 11: enter your password (which is the one you entered into the passphrase text file earlier). This should open your account "front end" gui.
+
+Step 12: Go back to the root directory and double click the run_mine .bat file.
+
+At this point you should have a total of 3 command line windows open...your computer should be generating plots in one command window, have initialized the Burst server and come to the nxt.apiServerEnforcePOST="true" line in another, and yet a thrid command window should be displaying your mining. The mining will repeatedly generate lines such as:
+
+{"height":"2","generationSignature":"c26ef60f51aa5fc6225a481f08e51903085067a8a7d
+558f94712d702f2a67bb4"}
+{"height":"3","generationSignature":"a62b500a5dfc7f5e614fcf4917d83ffccd01e9c9643
+d7d0e982c75043d27baff"}
+Error reading file: 10818239041755946932_1_800000_500
+{"height":"3","generationSignature":"a62b500a5dfc7f5e614fcf4917d83ffccd01e9c9643
+d7d0e982c75043d27baff"}
+{"height":"3","generationSignature":"a62b500a5dfc7f5e614fcf4917d83ffccd01e9c9643
+d7d0e982c75043d27baff"}
+New best: 10818239041755946932:160093
+Submitting share
+{"result":"deadline: 508"}
+
+This is good, and it means YOU ARE NOW MINING. The "deadline" is a measurement of seconds until you may generate a block (provided no one else has already generated one). Yes, it is a bit of a race, but as your plot # increases, so do your chances of hitting/solving a block. I believe you can compare the size of your plot to what would be your hashrate if mining a normal scrypt coin.
+
+Any other issues with a single step can be analyzed by typing "pause" on a seperate line in any of the .bat files, which will give you time to read and post whatever error you are experiencing.
+
+If there is anything I left out feel free to let me know or just add to this. Donations to BURST-H2ZW-3H4D-RJBS-FCVGV 
+or 15977480701804512252</code>
 
  
 
+ <a name="Notes"></a>
+ <h2>Notes </h2>
 
+ <ul>
+ <li>Thanks to KSpinner for this documentation. </li>
+ </ul>
 
 
        </div>
