@@ -27,18 +27,19 @@ Date Downloaded: 2014-12-05 09:25:58 PM !-->
    <link rel='alternate' type='application/rss+xml' title='RSS' href='blog/blog.rss' />
    <link href='../api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css' rel='stylesheet' />
      <link rel="stylesheet" href="./css/material-design-iconic-font.min.css">
+     <script src='developers.js'></script>
 
    <!--[if lt IE 9 ]><script src='js/redirect-ie.js'></script><![endif]-->
    <script src='../js.stripe.com/v2/index.html.js'></script>
    <script>
-  var KM_COOKIE_DOMAIN = 'www.mapbox.com';
+
   var analytics=analytics||[];(function(){var e=['identify','track','trackLink','trackForm','trackClick','trackSubmit','page','pageview','ab','alias','ready','group'],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src=('https:'===document.location.protocol?'https://':"http://")+'d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/'+e+'/analytics.min.js';var n=document.getElementsByTagName('script')[0];n.parentNode.insertBefore(t,n)};
   analytics.load(window.location.hostname.indexOf('mapbox.com') !== -1 ? 'fl0c8p240n' : '0biiejpgfj');
 
   Stripe.setPublishableKey(window.location.hostname.indexOf('mapbox.com') !== -1 ?
     'pk_live_hI6mmOTIg7KkywK6vo3vJvpk' : 'pk_test_gmIyREg3sKzAiyMkAEeCsxUG');
   </script>
-   <script src='../api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.js'></script>
+
 
    <script>
   window.mapbox_api = '/core';
@@ -51,8 +52,8 @@ Date Downloaded: 2014-12-05 09:25:58 PM !-->
   }
   </script>
    <script src='base.js/dist/base.js'></script>
-   <script src='base.js/dist/developers.js'></script>
-     <script src='base.js/dist/index.js'></script>
+   <script src='./base.js/dist/developers.js'></script>
+     <script src='./base.js/dist/index.js'></script>
 
   
    <link href='home/home.css' rel='stylesheet' />
@@ -267,23 +268,23 @@ Date Downloaded: 2014-12-05 09:25:58 PM !-->
    <div class='limiter'>
      <div class='col12 space-bottom4 clearfix contain round keyline-all fill-white'>
        <a href='mapbox.js/index.html' class='col4 toolkit pad4 pin-left quiet'>
-         <i class="md-query-builder md-5x" style="color:#3887be;font-size:160px;padding-left:40px;"></i>
+         <i class="md-gps-fixed md-5x" style="color:#3887be;font-size:160px;padding-left:40px;"></i>
          <h2 class='space-top2 space-bottom1'>Smart Contracts </h2>
          <p class='prose quiet'>Create smart contracts/automated transactions that are automatically handled by the network. </p>
        </a>
        <a href='mapbox-ios-sdk/index.html' class='col4 margin4 toolkit pad4 contain keyline-left quiet'>
-         <i class="md-query-builder md-5x" style="color:#797ab9;font-size:160px;padding-left:40px;"></i>
+         <i class="md-account-circle md-5x" style="color:#797ab9;font-size:160px;padding-left:40px;"></i>
          <h2 class='space-top2 space-bottom1'>BurstID </h2>
-         <p class='quiet prose'>Build native applcations on ___ with the Mapbox iOS ___ or MBXMapKit. </p>
+         <p class='quiet prose'>Allow the linking BurstId to a Burst account for transfers with spending limits.</p>
        </a>
        <a href='mapbox-android-sdk/index.html' class='col4 toolkit pad4 pin-right keyline-left quiet'>
-         <i class="md-query-builder md-5x" style="color:#57b581;font-size:160px;padding-left:40px;"></i>
+         <i class="md-data-usage md-5x" style="color:#57b581;font-size:160px;padding-left:40px;"></i>
          <h2 class='space-top2 space-bottom1'>File Storage </h2>
-         <p class='quiet prose'>Build native applications on _______ with the Mapbox Android ___. </p>
+         <p class='quiet prose'>(Future Feature). Store your files on the BURST Network.</p>
        </a>
      </div>
      <div class='clearfix col12'>
-       <a class='button col3 rcon next fr js-track-develop-link' href='developers/index.html'>Develop with Mapbox </a>
+       <a class='button col3 rcon next fr js-track-develop-link' href='./help/index.html'>Look at Documentation </a>
      </div>
    </div>
  </section>
@@ -293,35 +294,31 @@ Date Downloaded: 2014-12-05 09:25:58 PM !-->
    <div class="contain limiter clearfix">
      <div class="col5 prose prose-big">
        <div class="space-bottom2">
-         <h1><a href="#javascript">Mapbox.js </a></h1>
-         <p>Develop mobile and web ____________ with Mapbox.js, our
-         <a class="quiet" href="https://github.com/mapbox/mapbox.js/">open-source </a> JavaScript library. </p>
+         <h1><a href="#javascript">Advanced Transactions </a></h1>
+         <p>Burst supports advanced transactions that differ from normal, standard transactions. </p>
          <div class="space-bottom2">
            <div class="space-bottom1">
-             <span class="inline icon check dot dark fill-green"></span><span class="pad1x">Plugin ecosystem </span>
+             <span class="inline icon check dot dark fill-green"></span><span class="pad1x">Escrow Transactions </span>
            </div>
            <div class="space-bottom1">
-             <span class="inline icon check dot dark fill-green"></span><span class="pad1x">Built on Leaflet </span>
+             <span class="inline icon check dot dark fill-green"></span><span class="pad1x">Subscription Transactions </span>
            </div>
            <div class="space-bottom1">
-             <span class="inline icon check dot inline dark fill-green"></span><span class="pad1x">Browser support: Mobile browsers, ______ browsers, and IE8+ </span>
+             <span class="inline icon check dot inline dark fill-green"></span><span class="pad1x">Reserve Funds </span>  
            </div>
          </div>
- <pre> <span class="comment">// Create a map __ the div #map </span>
-L.mapbox.map('map', ' <strong>examples.map-zr0njcqy </strong>');
+ <pre> <span class="comment"><strong>A first of it's kind </strong> </span>
+No other crypto-currency currently supports this.
  </pre>
        </div>
 
        <div class="clearfix mobile-cols col12">
-         <a class="button col6 rcon next" href="../mapbox.js/index.html">Docs &amp; examples </a>
+         <a class="button col6 rcon next" href="./help/index.html">Learn More </a>
        </div>
      </div>
 
      <div class="hide-mobile col6 margin1 center">
-       <div class="device device-browser">
-         <img src="img/mapbox-js@2x.png" class="device-content">
-         <div class="device-details"></div>
-       </div>
+        <i class="md-settings-input-svideo md-5x" style="color:#57b581;font-size:300px;padding-left:40px;"></i> 
      </div>
 
    </div>
@@ -329,93 +326,63 @@ L.mapbox.map('map', ' <strong>examples.map-zr0njcqy </strong>');
 
  <div id="mobile" class="fill-light contain col12 clip">
    <div class="limiter pad8y contain clearfix">
-     <div class="col5">
-         <div class="space-bottom2 prose prose-big">
-           <h1><a href="#mobile">Mapbox iOS SDK &amp; _________ </a></h1>
-           <p>Build native applications on ___ with the Mapbox iOS ___ or on iOS and __ X with MBXMapKit. </p>
-         </div>
-         <div class="space-bottom2 keyline-all round ios-table">   <div class="col12 pad1 mobile-cols clearfix keyline-bottom round-top">
-     <div class="small col3">Feature </div>
-     <div class="small center col3">Apple's MapKit </div>
-     <div class="small center col3">MBXMapKit </div>
-     <div class="small center col3">Mapbox iOS SDK </div>
-   </div>
-   <div class="row5 round-bottom scroll-styled">
-     <table class="fixed small">
-       <tbody><tr>
-         <td>Performance </td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-       </tr>
-       <tr>
-         <td>Annotations </td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-       </tr>
-       <tr>
-         <td>User location </td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-       </tr>
-       <tr>
-         <td>Compact code </td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon x inline quiet dot"></span></td>
-       </tr>
-       <tr>
-         <td>Customization </td>
-         <td class="center"><span class="icon x inline quiet dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-       </tr>
-       <tr>
-         <td>Caching </td>
-         <td class="center"><span class="icon x inline quiet dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-       </tr>
-       <tr>
-         <td>Offline maps </td>
-         <td class="center"><span class="icon x inline quiet dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-       </tr>
-       <tr>
-         <td>Open Source </td>
-         <td class="center"><span class="icon x inline quiet dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-       </tr>
-       <tr>
-         <td>Clustering </td>
-         <td class="center"><span class="icon x inline quiet dot"></span></td>
-         <td class="center"><span class="icon x inline quiet dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-       </tr>
-       <tr>
-         <td>UTFGrid </td>
-         <td class="center"><span class="icon x inline quiet dot"></span></td>
-         <td class="center"><span class="icon x inline quiet dot"></span></td>
-         <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
-       </tr>
-     </tbody></table>
-   </div>
- </div>
- <pre class="output pad1 row2 clip round space-bottom2"><span class="comment">// Create a tile ______ from Mapbox </span>
+    <div class="col5">
+        <div class="space-bottom2 prose prose-big">
+          <h1><a href="#mobile">Mapbox iOS SDK &amp; MBXMapKit</a></h1>
+          <p>Build native applications on iOS with the Mapbox iOS SDK or on iOS and OS X with MBXMapKit.</p>
+        </div>
+        <div class="space-bottom2 keyline-all round ios-table">  <div class="col12 pad1 mobile-cols clearfix keyline-bottom round-top">
+    <div class="small col3">Feature</div>
+    <div class="small center col3">Apple's MapKit</div>
+    <div class="small center col3">MBXMapKit</div>
+    <div class="small center col3">Mapbox iOS SDK</div>
+  </div>
+  <div class="row5 round-bottom scroll-styled">
+    <table class="fixed small">
+      <tbody><tr>
+        <td>Performance</td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+      </tr>
+      <tr>
+        <td>Annotations</td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+      </tr>
+      <tr>
+        <td>User location</td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+      </tr>
+      <tr>
+        <td>Compact code</td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+        <td class="center"><span class="icon x inline quiet dot"></span></td>
+      </tr>
+      <tr>
+        <td>Customization</td>
+        <td class="center"><span class="icon x inline quiet dot"></span></td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+        <td class="center"><span class="icon check inline dark fill-green dot"></span></td>
+      </tr>
+    </tbody></table>
+  </div>
+</div>
+<pre class="output pad1 row2 clip round space-bottom2"><span class="comment">// Create a tile source from Mapbox</span>
 [[RMMapboxSource alloc]
-    initWithMapID:@" <strong>examples.map-zr0njcqy </strong>"];
- </pre>
+    initWithMapID:@"<strong>examples.map-zr0njcqy</strong>"];
+</pre>
 
-       <div class="ios-pill clearfix mobile-cols col12 darken0">
-         <div class="pad1x col6"><a class="button col12 rcon next" href="../mapbox-ios-sdk/index.html">iOS SDK </a></div>
-         <div class="pad1x col6"><a class="button col12 rcon next" href="../mbxmapkit/index.html">MBXMapKit </a></div>
-       </div>
+      <div class="ios-pill clearfix mobile-cols col12 darken0">
+        <div class="pad1x col6"><a class="button col12 rcon next" href="/mapbox-ios-sdk/">iOS SDK</a></div>
+        <div class="pad1x col6"><a class="button col12 rcon next" href="/mbxmapkit/">MBXMapKit</a></div>
+      </div>
 
-     </div>
+    </div>
      <div class="hide-mobile col6 margin1 center">
        <div class="device device-phone-v">
          <img src="img/ios-sdk@2x.png" class="device-content">
