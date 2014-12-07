@@ -1,474 +1,394 @@
 <!DOCTYPE html >
- <html>
- <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
-   <meta charset='UTF-8' />
-   <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-   <meta name='robots' content='index' />
-   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  
-   <title>BURST - Official Website </title>
-
-   <meta name='st:title' content='BURST' />
-   <meta name='st:type' content='site' />
-   <meta name='st:info' content='site' />
-
-  
-
-   <link href='base/latest/base_8f8b1251.css' rel='stylesheet' />
-   <link href='css/site.css' rel='stylesheet' />
-   <link rel='stylesheet' href='base/latest/developers.css' />
-   <link rel='stylesheet' href='base/latest/index.css' />
-   <!--[if IE 9]><link href='css/site-ie9.css' rel='stylesheet' /><![endif]-->
-   <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon' />
-   <link rel='alternate' type='application/rss+xml' title='RSS' href='blog/blog.rss' />
-   <link href='../api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css' rel='stylesheet' />
-     <link rel="stylesheet" href="./css/material-design-iconic-font.min.css">
-     <script src='developers.js'></script>
-
-   <!--[if lt IE 9 ]><script src='js/redirect-ie.js'></script><![endif]-->
-   <script src='../js.stripe.com/v2/index.html.js'></script>
-   <script>
-  var KM_COOKIE_DOMAIN = 'www.mapbox.com';
-  var analytics=analytics||[];(function(){var e=['identify','track','trackLink','trackForm','trackClick','trackSubmit','page','pageview','ab','alias','ready','group'],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src=('https:'===document.location.protocol?'https://':"http://")+'d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/'+e+'/analytics.min.js';var n=document.getElementsByTagName('script')[0];n.parentNode.insertBefore(t,n)};
-  analytics.load(window.location.hostname.indexOf('mapbox.com') !== -1 ? 'fl0c8p240n' : '0biiejpgfj');
-
-  Stripe.setPublishableKey(window.location.hostname.indexOf('mapbox.com') !== -1 ?
-    'pk_live_hI6mmOTIg7KkywK6vo3vJvpk' : 'pk_test_gmIyREg3sKzAiyMkAEeCsxUG');
-  </script>
-
-
-   <script>
-  window.mapbox_api = '/core';
-  window.mapbox_tileApi = '../api.tiles.mapbox.com/index.html';
-  window.mapbox_accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6IlhHVkZmaW8ifQ.hAMX5hSW-QnTeRCMAy9A8Q' || 'pk.eyJ1IjoibWFwYm94IiwiYSI6IlhHVkZmaW8ifQ.hAMX5hSW-QnTeRCMAy9A8Q'
-  if (L.mapbox.VERSION[0] === '2') {
-      L.mapbox.accessToken = window.mapbox_accessToken;
-      L.mapbox.config.FORCE_HTTPS = true;
-      L.mapbox.config.HTTPS_URL = window.mapbox_tileApi + '/v4';
-  }
-  </script>
-   <script src='base.js/dist/base.js'></script>
-   <script src='./base.js/dist/developers.js'></script>
-     <script src='./base.js/dist/index.js'></script>
-
-  
-   <link href='home/home.css' rel='stylesheet' />
- <meta name="bitly-verification" content="1cabb779add9" />
-
- </head>
- <body class=' full bleed'>
- <div class='page-content'> 
-
- <div class='masthead show-in-loaded col12 clearfix  dark'>
-   <div class='limiter clearfix'>
-     <nav class='col12 text-right pad2y contain animate clearfix noprint'>
-       <a class='fl mb-logo' href='index.html'></a>
-       <h4 class='logo-enterpriseaddon pin-topleft text-aqua block-in-enterprise'>Enterprise </h4>
-       <div id="nav">
-
- 
-
-  
-</div>
-     </nav>
-   </div>
- </div>
-
- <div class=''><section class='slideshow splash js-fullheight fill-blue-light js-slideshow contain animate clip active1'>
-   <div class='carousel-fill gradient fill-blue-light col12 pin-left'></div>
-   <div class='carousel-fill gradient fill-purple col12 pin-left'></div>
-   <div class='carousel-fill gradient fill-green col12 pin-left'></div>
-   <div class='carousel-fill gradient fill-denim col12 pin-left'></div>
-   <div class='z1 pin-top pin-bottom slideshow-container limiter clearfix pad8y row12'>
-     <div class='col9 img-carousel js-img-carousel pin-right'>
-       <img class='col12 animate' src='home/slides/1@2x.png' data-text='Innovative' alt='Desktop computer' />
-       <img class='col12 animate' src='home/slides/2@2x.png' data-text='Feature-Rich' alt='An iPad' />
-       <img class='col12 animate' src='home/slides/3@2x.png' data-text='Green' alt='Vertical mobile display' />
-       <img class='col12 animate' src='home/slides/4@2x.png' data-text='HDD-Mining' alt='Horizontal mobile display' />
-     </div>
-     <div class='z1 slideshow-text pad4y col4 prose prose-big dark'>
-       <h2 class='fancy' style="font-size:28px;">Burst is A  <br><div class='hide-mobile js-underline underline clip active1 inline'></div><span class='inline show-mobile'></span> Crypto-currency.
-         </h2>
-       <div class='cta col12 clearfix'>
-         <div class='col6 hide-mobile pad0x'>
-           <a class='col12 button white space-bottom1' href='#features'>Learn More </a>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta charset='UTF-8' />
+      <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+      <meta name='robots' content='index' />
+      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+      <title>BURST - Official Website </title>
+      <meta name='st:title' content='BURST' />
+      <meta name='st:type' content='site' />
+      <meta name='st:info' content='site' />
+      <link href='base/latest/base_8f8b1251.css' rel='stylesheet' />
+      <link href='css/site.css' rel='stylesheet' />
+      <link rel='stylesheet' href='base/latest/developers.css' />
+      <link rel='stylesheet' href='base/latest/index.css' />
+      <!--[if IE 9]>
+      <link href='css/site-ie9.css' rel='stylesheet' />
+      <![endif]-->
+      <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon' />
+      <link rel='alternate' type='application/rss+xml' title='RSS' href='blog/blog.rss' />
+      <link href='../api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css' rel='stylesheet' />
+      <link rel="stylesheet" href="./css/material-design-iconic-font.min.css">
+      <script src='developers.js'></script>
+      <!--[if lt IE 9 ]><script src='js/redirect-ie.js'></script><![endif]-->
+      <script src='../js.stripe.com/v2/index.html.js'></script>
+      <script>
+         var KM_COOKIE_DOMAIN = 'www.mapbox.com';
+         var analytics=analytics||[];(function(){var e=['identify','track','trackLink','trackForm','trackClick','trackSubmit','page','pageview','ab','alias','ready','group'],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src=('https:'===document.location.protocol?'https://':"http://")+'d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/'+e+'/analytics.min.js';var n=document.getElementsByTagName('script')[0];n.parentNode.insertBefore(t,n)};
+         analytics.load(window.location.hostname.indexOf('mapbox.com') !== -1 ? 'fl0c8p240n' : '0biiejpgfj');
+         
+         Stripe.setPublishableKey(window.location.hostname.indexOf('mapbox.com') !== -1 ?
+           'pk_live_hI6mmOTIg7KkywK6vo3vJvpk' : 'pk_test_gmIyREg3sKzAiyMkAEeCsxUG');
+      </script>
+      <script>
+         window.mapbox_api = '/core';
+         window.mapbox_tileApi = '../api.tiles.mapbox.com/index.html';
+         window.mapbox_accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6IlhHVkZmaW8ifQ.hAMX5hSW-QnTeRCMAy9A8Q' || 'pk.eyJ1IjoibWFwYm94IiwiYSI6IlhHVkZmaW8ifQ.hAMX5hSW-QnTeRCMAy9A8Q'
+         if (L.mapbox.VERSION[0] === '2') {
+             L.mapbox.accessToken = window.mapbox_accessToken;
+             L.mapbox.config.FORCE_HTTPS = true;
+             L.mapbox.config.HTTPS_URL = window.mapbox_tileApi + '/v4';
+         }
+      </script>
+      <script src='base.js/dist/base.js'></script>
+      <script src='./base.js/dist/developers.js'></script>
+      <script src='./base.js/dist/index.js'></script>
+      <link href='home/home.css' rel='stylesheet' />
+      <meta name="bitly-verification" content="1cabb779add9" />
+   </head>
+   <body class=' full bleed'>
+      <div class='page-content'>
+         <div class='masthead show-in-loaded col12 clearfix  dark'>
+            <div class='limiter clearfix'>
+               <nav class='col12 text-right pad2y contain animate clearfix noprint'>
+                  <a class='fl mb-logo' href='index.html'></a>
+                  <h4 class='logo-enterpriseaddon pin-topleft text-aqua block-in-enterprise'>Enterprise </h4>
+                  <div id="nav">
+                  </div>
+               </nav>
+            </div>
          </div>
-         <div class='col6 pad0x'>
-           <a class='col12 button stroke rcon down space-bottom1' href='./download/index.html'>Download </a>
-         </div>
-       </div>
-     </div>
-   </div>
-   <div class='z1 hide-mobile pin-bottom col12 pad4y pager js-pager center'></div>
- </section>
-
- <section class='clearfix tagline contain animate'>
-     <div class='limiter pad8y'>
-       <div class='center prose clearfix contain z1'>
-           <h2 class="fancy">What is BURST?</h2>
-           <br>
-           <br>
-         <p class='margin1 col10'>Burst uses a new algorithm for proof of hdd capacity (POC) mining. Miners pre-generate chunks of data known as 'plots' which are then saved to disk.<br><br> The number of plots you store is effectively your mining speed. Every block the miner will skim through the saved plots, and come up with an amount of time until it is able to mine a block if another block hasn't yet been found. <br><br> After reading through the plots is complete, your hardware can idle until the block. The miner will be released a few hours before launch to give miners time to start generating plots. </p>
-       </div>
-     </div>
-
- 
-
- </section>
-
- <section id='design' class='design fill-white contain dark'>
-   <div class='limiter'>
-     <div class='clearfix'>
-       <div class='prose prose-big space-bottom4 col10'>
-         <h1 class='dark'>Designed to be Different </h1>
-       </div>
-     </div>
-     <div class='contain clearfix'>
-       <div class='space-bottom1'>
-         <div class='device device-browser col7'>
-           <img src="./home/slides/screenshot.png">
-             <div class='device-details'></div>
-           </div>
-         </div>
-
-       <div class='pad4 col5 prose prose-big space-bottom4'>
-         <div class='fr'>
-           <p class=''>
-          Burst is a new breed of crypto-currency designed from the ground up to be different, with it's new Proof-of-Capacity HDD-Mining algorithm.
-           </p>
-            <a class='button stroke col10 rcon next ' href='./download/index.html'>Download Now </a>
-         </div>
-       </div>
-     </div>
-     <div class='clearfix col12'>
-
-     </div>
-   </div>
- </section>
-
-
-
-
-<div class=""><link rel="stylesheet" href="developers.css">
-
- <div class="clearfix splash fill-blue dark" id="features">
-
-   <div id="intro" class="pad8y limiter section clearfix">
-     <div class="col6 prose prose-big space-bottom4">
-       <h2 class="fancy"><a href="#intro">Feature Packed </a>
-           <br>
-       <p>
-           <br>
- <span class="js-anon-message">
-      <a href="">You won't find features like these anywhere else.</a></span>
-       </p>
-
-     </h2></div>
-     <div class="clip margin1 col5">
-       <div class="pill space-bottom2 col12">
-         <a  class="strong quiet contain stroke col12 feature clearfix pad1">
-           <div class="dot inline dark fill-green pad1" style="width:40px; font-size:20px;height: 40px;"><i class="md-gps-fixed"></i></div>
-           <span class="pad1x">Smart Contracts </span>
-           <span class="pin-right small quiet pad2y pad1x">Automated Transactions </span>
-         </a>
-         <a  class="strong quiet contain stroke col12 feature clearfix pad1">
-           <div class="dot fill-purple pad1 dark inline" style="width:40px; font-size:20px;height: 40px;"><i class="md-cloud-queue"></i></div>
-           <span class="pad1x">HDD-Mining </span>
-           <span class="pin-right small quiet pad2y pad1x">A New Way of Mining </span>
-         </a>
-         <a  class="strong quiet contain stroke col12 feature clearfix pad1">
-           <div class="dot fill-orange pad1 dark inline" style="width:40px; font-size:20px;height: 40px;"><i class="md-memory"></i></div>
-           <span class="pad1x">NXT Based</span>
-           <span class="pin-right small quiet pad2y pad1x">With PoS Removed </span>
-         </a>
-         <a class="strong quiet contain stroke col12 feature clearfix pad1">
-           <div class="dot fill-gradient pad1 dark inline" style="width:40px; font-size:20px;height: 40px;"><i class="md-settings-ethernet"></i></div>
-           <span class="pad1x">Advanced Transactions </span>
-           <span class="pin-right small quiet pad2y pad1x">Escrow and Subscription </span>
-         </a>
-         <a class="strong quiet contain stroke col12 feature clearfix pad1">
-           <div class="dot fill-denim dark pad1 inline" style="width:40px; font-size:20px;height: 40px;"><i class=" md-account-circle"></i></div>
-           <span class="pad1x">BurstID </span>
-           <span class="pin-right small quiet pad2y pad1x">Authentication System </span>
-         </a>
-         <a class="strong quiet contain stroke col12 feature clearfix pad1">
-           <div class="dot fill-lighten1 dark pad1 inline" style="width:40px; font-size:20px;height: 40px;"><i class=" md-data-usage"></i></div>
-           <span class="pad1x">File Sotrage </span>
-           <span class="pin-right small quiet pad2y pad1x">Future Feature </span>
-         </a>
-       </div>
-
-       <a href="help/index.html" class="quiet round col12 clearfix pad2 stroke">
-         <span class="icon lifebuoy" ></span><strong class="inline space-bottom1 pad1x">Guides to getting started </strong>
-         <p class="prose">Take a look at the documentation for guides to getting started <span class="rcon next contain" style="top:2px;"></span></p>
-       </a>
-
-     </div>
-   </div>
- </div>
-    
-    <section class='developers fill-light pad8y'>
-   <div class='limiter'>
-     <div class='col12 space-bottom4 clearfix contain round keyline-all fill-white'>
-       <a href='mapbox.js/index.html' class='col4 toolkit pad4 pin-left quiet'>
-         <i class="md-gps-fixed md-5x" style="color:#3887be;font-size:160px;padding-left:40px;"></i>
-         <h2 class='space-top2 space-bottom1'>Smart Contracts </h2>
-         <p class='prose quiet'>Create smart contracts/automated transactions that are automatically handled by the network. </p>
-       </a>
-       <a href='mapbox-ios-sdk/index.html' class='col4 margin4 toolkit pad4 contain keyline-left quiet'>
-         <i class="md-account-circle md-5x" style="color:#797ab9;font-size:160px;padding-left:40px;"></i>
-         <h2 class='space-top2 space-bottom1'>BurstID </h2>
-         <p class='quiet prose'>Allow the linking BurstId to a Burst account for transfers with spending limits.</p>
-       </a>
-       <a href='mapbox-android-sdk/index.html' class='col4 toolkit pad4 pin-right keyline-left quiet'>
-         <i class="md-data-usage md-5x" style="color:#57b581;font-size:160px;padding-left:40px;"></i>
-         <h2 class='space-top2 space-bottom1'>File Storage </h2>
-         <p class='quiet prose'>(Future Feature). Store your files on the BURST Network.</p>
-       </a>
-     </div>
-     <div class='clearfix col12'>
-       <a class='button col3 rcon next fr js-track-develop-link' href='./help/index.html'>Look at Documentation </a>
-     </div>
-   </div>
- </section>
-
-
- <div id="javascript" class="pad8y col12 clip fill-white">
-   <div class="contain limiter clearfix">
-     <div class="col5 prose prose-big">
-       <div class="space-bottom2">
-         <h1><a href="#javascript">Advanced Transactions </a></h1>
-         <p>Burst supports advanced transactions that differ from normal, standard transactions, such as : </p>
-         <div class="space-bottom2">
-           <div class="space-bottom1">
-             <span class="inline icon check dot dark fill-green"></span><span class="pad1x">Escrow Transactions </span>
-           </div>
-           <div class="space-bottom1">
-             <span class="inline icon check dot dark fill-green"></span><span class="pad1x">Subscription Transactions </span>
-           </div>
-           <div class="space-bottom1">
-             <span class="inline icon check dot inline dark fill-green"></span><span class="pad1x">Reserve Funds </span>  
-           </div>
-         </div>
- <pre> <span class="comment"><strong>A first of it's kind </strong> </span>
+         <div class=''>
+            <section class='slideshow splash js-fullheight fill-blue-light js-slideshow contain animate clip active1'>
+               <div class='carousel-fill gradient fill-blue-light col12 pin-left'></div>
+               <div class='carousel-fill gradient fill-purple col12 pin-left'></div>
+               <div class='carousel-fill gradient fill-green col12 pin-left'></div>
+               <div class='carousel-fill gradient fill-denim col12 pin-left'></div>
+               <div class='z1 pin-top pin-bottom slideshow-container limiter clearfix pad8y row12'>
+                  <div class='col9 img-carousel js-img-carousel pin-right'>
+                     <img class='col12 animate' src='home/slides/1@2x.png' data-text='Innovative' alt='Desktop computer' />
+                     <img class='col12 animate' src='home/slides/2@2x.png' data-text='Feature-Rich' alt='An iPad' />
+                     <img class='col12 animate' src='home/slides/3@2x.png' data-text='Green' alt='Vertical mobile display' />
+                     <img class='col12 animate' src='home/slides/4@2x.png' data-text='HDD-Mining' alt='Horizontal mobile display' />
+                  </div>
+                  <div class='z1 slideshow-text pad4y col4 prose prose-big dark'>
+                     <h2 class='fancy' style="font-size:28px;">
+                        Burst is A  <br>
+                        <div class='hide-mobile js-underline underline clip active1 inline'></div>
+                        <span class='inline show-mobile'></span> Crypto-currency.
+                     </h2>
+                     <div class='cta col12 clearfix'>
+                        <div class='col6 hide-mobile pad0x'>
+                           <a class='col12 button white space-bottom1' href='#features'>Learn More </a>
+                        </div>
+                        <div class='col6 pad0x'>
+                           <a class='col12 button stroke rcon down space-bottom1' href='./download/index.html'>Download </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class='z1 hide-mobile pin-bottom col12 pad4y pager js-pager center'></div>
+            </section>
+            <section class='clearfix tagline contain animate'>
+               <div class='limiter pad8y'>
+                  <div class='center prose clearfix contain z1'>
+                     <h2 class="fancy">What is BURST?</h2>
+                     <br>
+                     <br>
+                     <p class='margin1 col10'>Burst uses a new algorithm for proof of hdd capacity (POC) mining. Miners pre-generate chunks of data known as 'plots' which are then saved to disk.<br><br> The number of plots you store is effectively your mining speed. Every block the miner will skim through the saved plots, and come up with an amount of time until it is able to mine a block if another block hasn't yet been found. <br><br> After reading through the plots is complete, your hardware can idle until the block. The miner will be released a few hours before launch to give miners time to start generating plots. </p>
+                  </div>
+               </div>
+            </section>
+            <section id='design' class='design fill-white contain dark'>
+               <div class='limiter'>
+                  <div class='clearfix'>
+                     <div class='prose prose-big space-bottom4 col10'>
+                        <h1 class='dark'>Designed to be Different </h1>
+                     </div>
+                  </div>
+                  <div class='contain clearfix'>
+                     <div class='space-bottom1'>
+                        <div class='device device-browser col7'>
+                           <img src="./home/slides/screenshot.png">
+                           <div class='device-details'></div>
+                        </div>
+                     </div>
+                     <div class='pad4 col5 prose prose-big space-bottom4'>
+                        <div class='fr'>
+                           <p class=''>
+                              Burst is a new breed of crypto-currency designed from the ground up to be different, with it's new Proof-of-Capacity HDD-Mining algorithm.
+                           </p>
+                           <a class='button stroke col10 rcon next ' href='./download/index.html'>Download Now </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class='clearfix col12'>
+                  </div>
+               </div>
+            </section>
+            <div class="">
+               <link rel="stylesheet" href="developers.css">
+               <div class="clearfix splash fill-blue dark" id="features">
+                  <div id="intro" class="pad8y limiter section clearfix">
+                     <div class="col6 prose prose-big space-bottom4">
+                        <h2 class="fancy">
+                           <a href="#intro">Feature Packed </a>
+                           <br>
+                           <p>
+                              <br>
+                              <span class="js-anon-message">
+                              <a href="">You won't find features like these anywhere else.</a></span>
+                           </p>
+                        </h2>
+                     </div>
+                     <div class="clip margin1 col5">
+                        <div class="pill space-bottom2 col12">
+                           <a  class="strong quiet contain stroke col12 feature clearfix pad1">
+                              <div class="dot inline dark fill-green pad1" style="width:40px; font-size:20px;height: 40px;"><i class="md-gps-fixed"></i></div>
+                              <span class="pad1x">Smart Contracts </span>
+                              <span class="pin-right small quiet pad2y pad1x">Automated Transactions </span>
+                           </a>
+                           <a  class="strong quiet contain stroke col12 feature clearfix pad1">
+                              <div class="dot fill-purple pad1 dark inline" style="width:40px; font-size:20px;height: 40px;"><i class="md-cloud-queue"></i></div>
+                              <span class="pad1x">HDD-Mining </span>
+                              <span class="pin-right small quiet pad2y pad1x">A New Way of Mining </span>
+                           </a>
+                           <a  class="strong quiet contain stroke col12 feature clearfix pad1">
+                              <div class="dot fill-orange pad1 dark inline" style="width:40px; font-size:20px;height: 40px;"><i class="md-memory"></i></div>
+                              <span class="pad1x">NXT Based</span>
+                              <span class="pin-right small quiet pad2y pad1x">With PoS Removed </span>
+                           </a>
+                           <a class="strong quiet contain stroke col12 feature clearfix pad1">
+                              <div class="dot fill-gradient pad1 dark inline" style="width:40px; font-size:20px;height: 40px;"><i class="md-settings-ethernet"></i></div>
+                              <span class="pad1x">Advanced Transactions </span>
+                              <span class="pin-right small quiet pad2y pad1x">Escrow and Subscription </span>
+                           </a>
+                           <a class="strong quiet contain stroke col12 feature clearfix pad1">
+                              <div class="dot fill-denim dark pad1 inline" style="width:40px; font-size:20px;height: 40px;"><i class=" md-account-circle"></i></div>
+                              <span class="pad1x">BurstID </span>
+                              <span class="pin-right small quiet pad2y pad1x">Authentication System </span>
+                           </a>
+                           <a class="strong quiet contain stroke col12 feature clearfix pad1">
+                              <div class="dot fill-lighten1 dark pad1 inline" style="width:40px; font-size:20px;height: 40px;"><i class=" md-data-usage"></i></div>
+                              <span class="pad1x">File Sotrage </span>
+                              <span class="pin-right small quiet pad2y pad1x">Future Feature </span>
+                           </a>
+                        </div>
+                        <a href="help/index.html" class="quiet round col12 clearfix pad2 stroke">
+                           <span class="icon lifebuoy" ></span><strong class="inline space-bottom1 pad1x">Guides to getting started </strong>
+                           <p class="prose">Take a look at the documentation for guides to getting started <span class="rcon next contain" style="top:2px;"></span></p>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <section class='developers fill-light pad8y'>
+                  <div class='limiter'>
+                     <div class='col12 space-bottom4 clearfix contain round keyline-all fill-white'>
+                        <a href='mapbox.js/index.html' class='col4 toolkit pad4 pin-left quiet'>
+                           <i class="md-gps-fixed md-5x" style="color:#3887be;font-size:160px;padding-left:40px;"></i>
+                           <h2 class='space-top2 space-bottom1'>Smart Contracts </h2>
+                           <p class='prose quiet'>Create smart contracts/automated transactions that are automatically handled by the network. </p>
+                        </a>
+                        <a href='mapbox-ios-sdk/index.html' class='col4 margin4 toolkit pad4 contain keyline-left quiet'>
+                           <i class="md-account-circle md-5x" style="color:#797ab9;font-size:160px;padding-left:40px;"></i>
+                           <h2 class='space-top2 space-bottom1'>BurstID </h2>
+                           <p class='quiet prose'>Allow the linking BurstId to a Burst account for transfers with spending limits.</p>
+                        </a>
+                        <a href='mapbox-android-sdk/index.html' class='col4 toolkit pad4 pin-right keyline-left quiet'>
+                           <i class="md-data-usage md-5x" style="color:#57b581;font-size:160px;padding-left:40px;"></i>
+                           <h2 class='space-top2 space-bottom1'>File Storage </h2>
+                           <p class='quiet prose'>(Future Feature). Store your files on the BURST Network.</p>
+                        </a>
+                     </div>
+                     <div class='clearfix col12'>
+                        <a class='button col3 rcon next fr js-track-develop-link' href='./help/index.html'>Look at Documentation </a>
+                     </div>
+                  </div>
+               </section>
+               <div id="javascript" class="pad8y col12 clip fill-white">
+                  <div class="contain limiter clearfix">
+                     <div class="col5 prose prose-big">
+                        <div class="space-bottom2">
+                           <h1><a href="#javascript">Advanced Transactions </a></h1>
+                           <p>Burst supports advanced transactions that differ from normal, standard transactions, such as : </p>
+                           <div class="space-bottom2">
+                              <div class="space-bottom1">
+                                 <span class="inline icon check dot dark fill-green"></span><span class="pad1x">Escrow Transactions </span>
+                              </div>
+                              <div class="space-bottom1">
+                                 <span class="inline icon check dot dark fill-green"></span><span class="pad1x">Subscription Transactions </span>
+                              </div>
+                              <div class="space-bottom1">
+                                 <span class="inline icon check dot inline dark fill-green"></span><span class="pad1x">Reserve Funds </span>  
+                              </div>
+                           </div>
+                           <pre> <span class="comment"><strong>A first of it's kind </strong> </span>
 No other crypto-currency currently supports this.
  </pre>
-       </div>
-
-       <div class="clearfix mobile-cols col12">
-         <a class="button col6 rcon next" href="./help/features/features.html">Learn More </a>
-       </div>
-     </div>
-
-     <div class="hide-mobile col6 margin1 center">
-        <i class="md-settings-input-svideo md-5x" style="color:#57b581;font-size:300px;padding-left:40px;"></i> 
-     </div>
-
-   </div>
- </div>
-
- <div id="android" class="pad8y contain col12 clip fill-light">
-   <div class="limiter contain clearfix">
-     <div class="col5">
-
-       <div class="space-bottom2 prose prose-big">
-         <h1><a href="#android">Gorgeous UI </a></h1>
-         <p>Burst differs from traditional crypto-currencies in that it has a gorgeous, user-friendly UI. </p>
-       </div>
-
- <pre class="output pad1 round space-bottom2"> <span class="comment"><strong>User Friendly</strong></span><br>Burst's Wallet is easily the most user-friendly UI around.</pre>
-
-       <div class="mobile-cols clearfix col12">
-         <a class="button col6 rcon next" href="./help/misc/screenshots.html">View Screenshots</a>
-       </div>
-     </div>
-
-     <i class="md-view-quilt md-5x" style="color:#8a8bcb;font-size:300px;padding-left:200px;"></i> 
-
-   </div>
- </div>
-
- <div id="android" class="pad8y contain col12 clip fill-white">
-   <div class="limiter contain clearfix">
-     <div class="col5">
-
-       <div class="space-bottom2 prose prose-big">
-         <h1><a href="#android">HDD Mining </a></h1>
-         <p>Burst uses a brand new Proof-of-Capacity (PoC), algorithm that allows users to mine Burst with their HDD's. </p>
-       </div>
-
- <pre class="output pad1 round space-bottom2"> <span class="comment"><strong>Innovative</strong></span><br>Burst is currently the only crypto-currency to implement PoC</pre>
-
-       <div class="mobile-cols clearfix col12">
-         <a class="button col6 rcon next" href="./help/features/features.html">Documentation </a>
-       </div>
-     </div>
-
-     <i class="md-memory md-5x" style="color:#ee8a65;font-size:300px;padding-left:200px;"></i> 
-
-   </div>
- </div>
-
- <div id="mapbox-studio" class="pad8y fill-light contain col12 clip">
-   <div class="limiter contain clearfix">
-     <div class="col5">
-       <div class="space-bottom2 prose prose-big">
-         <h1><a href="#mapbox-studio">NXT Based </a></h1>
-         <p>Burst is a fork of NXT with PoS removed to make way for Proof-of-Capacity. Burst has all the features of a 2nd Gen crypto-currency with it's own added benefits. </p>
-       </div>
-
-       <div class="ios-pill clearfix mobile-cols col12 darken0">
-         <div class="pad1x col6"><a class="button col12 rcon next" href="./help/features/features.html">Read More </a></div>
-       </div>
-
-       <div class="pad4y small">
-         <span class="block strong">Links </span>
-         <span class="block"><a href="http://nxt.org/" class="quiet">NXT Website </a></span>
-         <span class="block space-bottom2"><a href="http://nxtforum.org/" class="quiet">NXT Community </a></span>
-       </div>
-     </div>
-     <div class="col6 margin1 center">
-         <i class="md-details md-5x" style="color:#7bc5c4;font-size:300px;padding-left:40px;"></i> 
-     </div>
-   </div>
- </div>
-
- <div id="web-services" class="dark fill-blue contain col12 clip">
-   <div class="limiter pad8y contain clearfix">
-     <div class="col5 prose prose-big">
-
-         <h1><a href="#web-services">Fast, Cheap, Simple </a></h1>
-
-         <p>Besides providing all of these features, BURST at it's core is a blazing-fast and cheap crypto-currency. You can send BURST anywhere in the world within minutes. </p>
-
- <pre class="output scroll-styled pad1 round space-bottom2"> <span class="comment">Fast &amp; Cheap </span>
+                        </div>
+                        <div class="clearfix mobile-cols col12">
+                           <a class="button col6 rcon next" href="./help/features/features.html">Learn More </a>
+                        </div>
+                     </div>
+                     <div class="hide-mobile col6 margin1 center">
+                        <i class="md-settings-input-svideo md-5x" style="color:#57b581;font-size:300px;padding-left:40px;"></i> 
+                     </div>
+                  </div>
+               </div>
+               <div id="android" class="pad8y contain col12 clip fill-light">
+                  <div class="limiter contain clearfix">
+                     <div class="col5">
+                        <div class="space-bottom2 prose prose-big">
+                           <h1><a href="#android">Gorgeous UI </a></h1>
+                           <p>Burst differs from traditional crypto-currencies in that it has a gorgeous, user-friendly UI. </p>
+                        </div>
+                        <pre class="output pad1 round space-bottom2"> <span class="comment"><strong>User Friendly</strong></span><br>Burst's Wallet is easily the most user-friendly UI around.</pre>
+                        <div class="mobile-cols clearfix col12">
+                           <a class="button col6 rcon next" href="./help/misc/screenshots.html">View Screenshots</a>
+                        </div>
+                     </div>
+                     <i class="md-view-quilt md-5x" style="color:#8a8bcb;font-size:300px;padding-left:200px;"></i> 
+                  </div>
+               </div>
+               <div id="android" class="pad8y contain col12 clip fill-white">
+                  <div class="limiter contain clearfix">
+                     <div class="col5">
+                        <div class="space-bottom2 prose prose-big">
+                           <h1><a href="#android">HDD Mining </a></h1>
+                           <p>Burst uses a brand new Proof-of-Capacity (PoC), algorithm that allows users to mine Burst with their HDD's. </p>
+                        </div>
+                        <pre class="output pad1 round space-bottom2"> <span class="comment"><strong>Innovative</strong></span><br>Burst is currently the only crypto-currency to implement PoC</pre>
+                        <div class="mobile-cols clearfix col12">
+                           <a class="button col6 rcon next" href="./help/features/features.html">Documentation </a>
+                        </div>
+                     </div>
+                     <i class="md-memory md-5x" style="color:#ee8a65;font-size:300px;padding-left:200px;"></i> 
+                  </div>
+               </div>
+               <div id="mapbox-studio" class="pad8y fill-light contain col12 clip">
+                  <div class="limiter contain clearfix">
+                     <div class="col5">
+                        <div class="space-bottom2 prose prose-big">
+                           <h1><a href="#mapbox-studio">NXT Based </a></h1>
+                           <p>Burst is a fork of NXT with PoS removed to make way for Proof-of-Capacity. Burst has all the features of a 2nd Gen crypto-currency with it's own added benefits. </p>
+                        </div>
+                        <div class="ios-pill clearfix mobile-cols col12 darken0">
+                           <div class="pad1x col6"><a class="button col12 rcon next" href="./help/features/features.html">Read More </a></div>
+                        </div>
+                        <div class="pad4y small">
+                           <span class="block strong">Links </span>
+                           <span class="block"><a href="http://nxt.org/" class="quiet">NXT Website </a></span>
+                           <span class="block space-bottom2"><a href="http://nxtforum.org/" class="quiet">NXT Community </a></span>
+                        </div>
+                     </div>
+                     <div class="col6 margin1 center">
+                        <i class="md-details md-5x" style="color:#7bc5c4;font-size:300px;padding-left:40px;"></i> 
+                     </div>
+                  </div>
+               </div>
+               <div id="web-services" class="dark fill-blue contain col12 clip">
+                  <div class="limiter pad8y contain clearfix">
+                     <div class="col5 prose prose-big">
+                        <h1><a href="#web-services">Fast, Cheap, Simple </a></h1>
+                        <p>Besides providing all of these features, BURST at it's core is a blazing-fast and cheap crypto-currency. You can send BURST anywhere in the world within minutes. </p>
+                        <pre class="output scroll-styled pad1 round space-bottom2"> <span class="comment">Fast &amp; Cheap </span>
  You can send any amount of BURST for a fee of just 1 BURST, within minutes.
  </pre>
-
-       <div class="clearfix mobile-cols col12 pad0x">
-         <a class="button stroke col6 rcon next" href="./help/misc/specs.html">Fees and Block Times </a>
-       </div>
-     </div>
-
-     <div class="hide-mobile col6 margin1 center"><img src="img/web-services@2x.png" style=" padding-left: 80px;"></div>
-   </div>
- </div>
-
- <div class="col12 fill-white">
-   <div id="support" class="pad4y limiter clearfix">
-                  <div class='hide-mobile col12 support-illustration'></div>
-
-       <div class="col5 pad4y prose prose-big">
-         <h1>Community Support </h1>
-         <p>Need help with anything Burst related? Check out our <a href="./help/index.html">documentation </a> or ask the community on  <a class="stackoverflow-link" href="http://burstforums.com">Stack Overflow </a>. Or our biggest BitcoinTalk community  <a class="support-link" href="https://bitcointalk.org/index.php?topic=731923.0">[ANN] Burst | HDD Mining Coin </a>. </p>
-       </div>
-
-       <div class="col6 margin1 pad4y">
-         <div class="pill col12">
-
-           <a href="./help/index.html" class="quiet strong contain stroke col12 feature clearfix pad1">
-             <div class="dot inline dark pad1 fill-darken1"><span class="icon help"></span></div>
-             <span class="pad1x">Documentation </span>
-           </a>
-
-           <a href="http://burstforums.com" class="quiet strong contain stroke col12 feature clearfix pad1">
-             <div class="dot inline dark fill-orange pad1"><span class="icon stackoverflow"></span></div>
-             <span class="pad1x">BurstForums.com </span>
-           </a>
-
-           <a href="https://bitcointalk.org/index.php?topic=731923.0" class="quiet strong contain stroke col12 feature clearfix pad1">
-             <div class="dot inline dark fill-purple pad1"><span class="icon star"></span></div>
-             <span class="pad1x">BitcoinTalk Thread</span>
-           </a>
+                        <div class="clearfix mobile-cols col12 pad0x">
+                           <a class="button stroke col6 rcon next" href="./help/misc/specs.html">Fees and Block Times </a>
+                        </div>
+                     </div>
+                     <div class="hide-mobile col6 margin1 center"><img src="img/web-services@2x.png" style=" padding-left: 80px;"></div>
+                  </div>
+               </div>
+               <div class="col12 fill-white">
+                  <div id="support" class="pad4y limiter clearfix">
+                     <div class='hide-mobile col12 support-illustration'></div>
+                     <div class="col5 pad4y prose prose-big">
+                        <h1>Community Support </h1>
+                        <p>Need help with anything Burst related? Check out our <a href="./help/index.html">documentation </a> or ask the community on  <a class="stackoverflow-link" href="http://burstforums.com">Stack Overflow </a>. Or our biggest BitcoinTalk community  <a class="support-link" href="https://bitcointalk.org/index.php?topic=731923.0">[ANN] Burst | HDD Mining Coin </a>. </p>
+                     </div>
+                     <div class="col6 margin1 pad4y">
+                        <div class="pill col12">
+                           <a href="./help/index.html" class="quiet strong contain stroke col12 feature clearfix pad1">
+                              <div class="dot inline dark pad1 fill-darken1"><span class="icon help"></span></div>
+                              <span class="pad1x">Documentation </span>
+                           </a>
+                           <a href="http://burstforums.com" class="quiet strong contain stroke col12 feature clearfix pad1">
+                              <div class="dot inline dark fill-orange pad1"><span class="icon stackoverflow"></span></div>
+                              <span class="pad1x">BurstForums.com </span>
+                           </a>
+                           <a href="https://bitcointalk.org/index.php?topic=731923.0" class="quiet strong contain stroke col12 feature clearfix pad1">
+                              <div class="dot inline dark fill-purple pad1"><span class="icon star"></span></div>
+                              <span class="pad1x">BitcoinTalk Thread</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <section class="pad8y fill-purple studio-2">
+               <div class="row12 clearfix limiter">
+                  <div class="fill-purple pad4 col6 dark prose">
+                     <h2><span class="inline icon pad0 polygon dot fill-darken1"></span> A Green Crypto-curreny </h2>
+                     <p>Burst is an HDD-Mining Coin, therefore Burst uses far less energy than traditional PoW-based crypto-currencies. </p>
+                     <p><strong>HDD-Mining</strong> Burst uses a brand new PoC, Proof of Capacity Algorithm that makes HDD Mining possible. This algorithm is a first of it's kind and far ahead of current technology. </p>
+                  </div>
+               </div>
+            </section>
+            <section class='actions fill-blue dark pad8y'>
+               <div class='limiter center clearfix'>
+                  <h2 class='space-bottom2 fancy'>Let's Get Started </h2>
+                  <a class='margin4 col4 button stroke' href='./download/index.html'>Download </a>
+               </div>
+            </section>
+            <script src='home/home.js'></script>
+            <script src='js/olark.js'></script>
          </div>
-
-       </div>
-     </div>
-   </div>
- </div>
-
-
-
-<section class="pad8y fill-purple studio-2">
- <div class="row12 clearfix limiter">
-     <div class="fill-purple pad4 col6 dark prose">
-         <h2><span class="inline icon pad0 polygon dot fill-darken1"></span> A Green Crypto-curreny </h2>
-         <p>Burst is an HDD-Mining Coin, therefore Burst uses far less energy than traditional PoW-based crypto-currencies. </p>
-         <p><strong>HDD-Mining</strong> Burst uses a brand new PoC, Proof of Capacity Algorithm that makes HDD Mining possible. This algorithm is a first of it's kind and far ahead of current technology. </p>
-     </div>
- </div>
- </section>
-
- <section class='actions fill-blue dark pad8y'>
-   <div class='limiter center clearfix'>
-     <h2 class='space-bottom2 fancy'>Let's Get Started </h2>
-     <a class='margin4 col4 button stroke' href='./download/index.html'>Download </a>
-   </div>
- </section>
-
- <script src='home/home.js'></script>
- <script src='js/olark.js'></script>
- </div>
-
- <div class='footer pad4y clearfix hide-mobile fill-light'>
-   <div class='limiter'>
-    <div class='clearfix'> 
-     <div class='col12 small mobile-cols' style="padding-bottom: 40px; padding-left: 240px;">
-       <div class='col12 clearfix'>
-         <div class='col4'>          
-           <a id='footer-design' class='space-bottom0 col12 strong' href='./index.html'>Home </a>          
-           <a id='footer-data' class='space-bottom0 col12 strong' href='./index.html#features'>Features </a>
-          
+         <div class='footer pad4y clearfix hide-mobile fill-light'>
+            <div class='limiter'>
+               <div class='clearfix'>
+                  <div class='col12 small mobile-cols' style="padding-bottom: 40px; padding-left: 240px;">
+                     <div class='col12 clearfix'>
+                        <div class='col4'>          
+                           <a id='footer-design' class='space-bottom0 col12 strong' href='./index.html'>Home </a>          
+                           <a id='footer-data' class='space-bottom0 col12 strong' href='./index.html#features'>Features </a>
+                        </div>
+                        <div class='col4 footer-social'>          
+                           <a id='footer-plans' class='space-bottom0 col12 quiet strong' href='./about/index.html'>Community </a>          
+                           <a id='footer-blog' class='space-bottom0 col12 quiet strong' href='./help/index.html'>Documentation </a>                 
+                        </div>
+                        <div class='col4'>               
+                           <a id='footer-about' class='space-bottom0 col12 quiet strong' href='./download/index.html'>Download </a>      
+                           <a id='footer-about' class='space-bottom0 col12 quiet strong' href='https://bitcointalk.org/index.php?topic=731923.0'>BitcoinTalk Thread </a>  
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class='limiter newsletter-copyright clearfix'>
+               <div class='col12 contain newsletter' style="padding-bottom: 40px; padding-left: 200px;">
+                  <form id='newsletter' method='post'>
+                     <fieldset class='clearfix input-pill col10 pill mobile-cols with-icon'>
+                        <span class='icon mail quiet'></span>
+                        <input type='text' value='' placeholder='Sign up for our newsletter' name='email' class='col9 required email' />
+                        <input type='submit' value='Subscribe' class='col3 quiet' />
+                     </fieldset>
+                  </form>
+               </div>
+            </div>
          </div>
-         <div class='col4 footer-social'>          
-           <a id='footer-plans' class='space-bottom0 col12 quiet strong' href='./about/index.html'>Community </a>          
-           <a id='footer-blog' class='space-bottom0 col12 quiet strong' href='./help/index.html'>Documentation </a>                 
+         <div class='footer-copyright small center noprint fill-light show-mobile'>
+            <div class='limiter'>
+               <div class='pad2y'>
+                  <a href='tos/index.html'>Terms </a> +
+                  <a href='privacy/index.html'>Privacy </a>
+               </div>
+            </div>
          </div>
-         <div class='col4'>               
-           <a id='footer-about' class='space-bottom0 col12 quiet strong' href='./download/index.html'>Download </a>      
-           <a id='footer-about' class='space-bottom0 col12 quiet strong' href='https://bitcointalk.org/index.php?topic=731923.0'>BitcoinTalk Thread </a>  
-         </div>
-
-       </div>
-     </div>
-
-     
-   </div>
-   </div>
-
-
-   <div class='limiter newsletter-copyright clearfix'>
-   <div class='col12 contain newsletter' style="padding-bottom: 40px; padding-left: 200px;">
-         <form id='newsletter' method='post'>
-           <fieldset class='clearfix input-pill col10 pill mobile-cols with-icon'>
-             <span class='icon mail quiet'></span>
-             <input type='text' value='' placeholder='Sign up for our newsletter' name='email' class='col9 required email' />
-             <input type='submit' value='Subscribe' class='col3 quiet' />
-           </fieldset>
-         </form>
-        </div> 
-
-
-   </div>
-
- </div>
-
- <div class='footer-copyright small center noprint fill-light show-mobile'>
-   <div class='limiter'>
-     <div class='pad2y'>
-             <a href='tos/index.html'>Terms </a> +
-             <a href='privacy/index.html'>Privacy </a>
-      
-     </div>
-   </div>
- </div>
-
-
-
- <div id='modal-content' class='animate modal modal-content'></div>
- </div>
- </body>
- </html>
- 
+         <div id='modal-content' class='animate modal modal-content'></div>
+      </div>
+   </body>
+</html>
