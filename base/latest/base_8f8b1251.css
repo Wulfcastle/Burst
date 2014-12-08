@@ -155,7 +155,7 @@ small { display:block; }
 .micro,
 .prose .micro,
 .prose.micro {
-  font-size:10px;
+  font-size:11px;
   line-height:20px;
   letter-spacing:0;
   }
